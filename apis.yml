@@ -1,23 +1,67 @@
 aid: bascom-hunter
+
 name: Bascom Hunter
-description: 'Bascom Hunter is a company surfaced via the API Evangelist harvest backlog (source: secondary-market)
-  and added to the network as a stub for full-pipeline profiling.'
+
+image: https://bascomhunter.com/wp-content/uploads/2023/07/bascomhunter-share.jpg
+
+description: 'Bascom Hunter designs advanced power, control, and electronic systems for aerospace, defense, and industrial applications. The company provides high‑performance thermal management, vapor‑cycle, liquid‑cooling, and air‑management solutions, along with defense electronics, communications, and RF front‑ends, serving demanding mission‑critical environments.'
+
 url: https://raw.githubusercontent.com/api-evangelist/bascom-hunter/refs/heads/main/apis.yml
+
 x-type: company
+
 x-source: harvest:secondary-market
-x-tier: stub
-x-tier-reason: harvest
+
+x-tier: profiled
+x-tier-reason: enrichment pass 2026-09-27 (modular-v1; was harvest)
+
 specificationVersion: '0.20'
+
 created: '2026-09-27'
+
 modified: '2026-09-27'
+
 tags:
 - Company
-apis: []
+- Aerospace
+- Defense
+- PowerSystems
+- ControlSystems
+- Electronics
+
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com
 - FN: APIs.json
   email: info@apis.io
+
 common:
+- type: Vendors
+  url: vendors/bascom-hunter-vendors.yml
+- type: Hosts
+  url: hosts/bascom-hunter-hosts.yml
+- type: PrivacyPolicy
+  url: https://bascomhunter.com/privacy/
+- type: Leadership
+  url: https://bascomhunter.com/leadership/
+- type: DomainSecurity
+  url: security/bascom-hunter-domain-security.yml
 - type: Website
-  url: https://www.nasdaqprivatemarket.com/
+  url: https://bascomhunter.com/
+
+apis: []
+
+x-coverage:
+  state: unreadable
+  reason: no-machine-readable-spec
+  detail: No OpenAPI or other machine‑readable contract was found on the API host or documentation pages.
+  evidence:
+    - url: https://api.bascomhunter.com/openapi.json
+      status: 000
+  checked: '2026-09-27'
+x-enrichment:
+  date: '2026-09-27'
+  status: enriched
+  artifacts_added: 5
+  pass: modular-v1
+  engine: identity=local,contract=local,surfaces=local,docs=local,regulatory=local
